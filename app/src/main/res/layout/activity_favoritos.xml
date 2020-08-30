@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favoritos"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite su fruta favorita:"
+        android:textAlignment="center"/>
+    <AutoCompleteTextView
+        android:id="@+id/actFavFruta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fruta favorita"
+        android:layout_marginBottom="40dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite su animal favorito:"
+        android:textAlignment="center"/>
+    <AutoCompleteTextView
+        android:id="@+id/actFavAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Animal favorito"
+        android:layout_marginBottom="40dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite su lenguaje de programación favorito:"
+        android:textAlignment="center"/>
+    <AutoCompleteTextView
+        android:id="@+id/actFavLenguaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lenguaje de programación favorito"
+        android:layout_marginBottom="40dp"/>
+    <ProgressBar
+        android:id="@+id/pbProgreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        style="?android:progressBarStyleHorizontal"
+        android:max="100"
+        />
+    <Button
+        android:id="@+id/btnProcesar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Procesar"/>
+
+</LinearLayout>
