@@ -49,6 +49,12 @@
         android:id="@+id/btnExtra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Extra (práctica)"/>
+        android:text="Extra (práctica)"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/btnMovies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MOvies (práctica)"/>
 
 </LinearLayout>

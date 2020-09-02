@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var etClave:EditText
     lateinit var btnIniciar:Button
     lateinit var btnExtra:Button
+    lateinit var btnMovies:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,12 +22,16 @@ class MainActivity : AppCompatActivity() {
         etClave = findViewById(R.id.etClave)
         btnIniciar = findViewById(R.id.btnIniciar)
         btnExtra = findViewById(R.id.btnExtra)
+        btnMovies = findViewById(R.id.btnMovies)
 
         btnIniciar.setOnLongClickListener(){
             validateFields()
         }
         btnExtra.setOnClickListener{
             startActivity(Intent(this, Products::class.java))
+        }
+        btnMovies.setOnClickListener{
+            startActivity(Intent(this, MoviesActivity::class.java))
         }
     }
 
