@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="3dp"
+        app:cardBackgroundColor="@android:color/darker_gray">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="3"
+            android:padding="5dp"
+            android:rowCount="2"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_columnWeight="2"
+                android:layout_columnSpan="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lasagna de pollo"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:layout_columnWeight="1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_rowSpan="2"
+                android:layout_rowWeight="1"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/food"
+                tools:srcCompat="@drawable/food" />
+
+            <TextView
+                android:id="@+id/tvLittlePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="$3.50"
+                android:textSize="10dp"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:id="@+id/tvBigPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="$3.50"
+                android:textSize="20dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@android:color/white" />
+        </GridLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
